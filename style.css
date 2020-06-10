@@ -1,0 +1,127 @@
+body{
+    font-family: Muli, sans-serif;
+    margin: 0;
+}
+/* Nav bar starts */
+#navbar{
+    height: 100%;
+    width: 300px;
+    min-width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-rows: 75px 7fr;
+    border-right: 2px solid #000000;
+    background: #cdd5d536;
+}
+
+#navbar header{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+}
+
+#navbar ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+#navbar ul li{
+    border-top: 2px solid black;
+    display: grid;
+}
+
+#navbar .nav-link{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 650;
+    color: #000000;
+    align-self: center;
+    cursor: pointer;
+}
+/* Nav bar end */
+/* Main area starts */
+#main-doc{
+    position: absolute;
+    margin: 0 0 150px 320px;
+}
+
+#main-doc .main-section{
+    border-bottom: 2px solid #000000;
+    margin: 30px 0;
+    padding-bottom: 20px;
+}
+
+#main-doc header{
+    font-weight: 800;
+    font-size: 2.5vw;
+}
+
+#main-doc p, #main-doc pre code, #main-doc li{
+    font-size: 1.35vw;
+}
+
+#main-doc img{
+    border: 2px solid #969696;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 60px;
+}
+
+#main-doc pre{
+    background: #9696964b;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+#main-doc h2{
+    font-size: 2vw;
+}
+
+#main-doc span{
+    background: #9696964b;
+    font-family: monospace;
+    font-size: 1.45vw;
+    color: #0055f2;
+}
+
+#main-doc #grid-img{
+    width: 70%;
+    height: auto;
+    margin: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-doc #Creating_your_grid_in_CSS h2{
+    font-weight: 600;
+}
+/* Main area end */
+/* Media Queries */
+@media (max-width: 1280px){
+    #main-doc{
+        margin: 320px 20px 150px;
+        text-align: justify;
+        position: relative;
+    }
+
+    #navbar{
+        z-index: 1;
+        max-height: 300px;
+        width: 100%;
+        position: absolute;
+        border-bottom: 2px solid #000000;
+    }
+
+    #main-doc img{
+        width: 60%;
+        height: auto;
+        margin: 20px;
+    }
+}
